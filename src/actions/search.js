@@ -16,20 +16,3 @@ var handleVideoSearch = (q) => {
 };
 
 export default handleVideoSearch;
-// searchYouTube({key: YOUTUBE_API_KEY, query: 'cats', max: 5}, function(items) {
-  //   console.log(items)});
-
-
-  // return (searchYouTube({key: YOUTUBE_API_KEY, query: q, max: 5}, function(videos) {
-    //       console.log(videos);
-    // (dispatch) => {
-      // }
-      //         dispatch ()
-          // return {
-          //   type: 'SEARCH',
-          //   videos: searchYouTube({key: YOUTUBE_API_KEY, query: q, max: 5}, function(videos) {
-          //           changeVideo(videos[0]);
-          //           changeVideoList(videos);
-          //         }),
-          //   dispatch: (dispatch) => {dispatch(this.videos)}
-          // }
