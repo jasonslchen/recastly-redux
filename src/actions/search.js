@@ -7,10 +7,10 @@ import thunk from 'redux-thunk';
 var handleVideoSearch = (q) => {
   // videos:
   //TODO:  Write an asynchronous action to handle a video search!
-  return () => {
+  return (dispatch) => {
     searchYouTube({key: YOUTUBE_API_KEY, query: q, max: 5}, function(videos) {
-      (changeVideo(videos[0]));
-      (changeVideoList(videos));
+      dispatch(changeVideo(videos[0]));
+      dispatch(changeVideoList(videos));
     })
   }
 };
